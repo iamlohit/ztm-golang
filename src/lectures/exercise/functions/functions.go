@@ -36,9 +36,7 @@ func oneNumber() int {
 
 // * Write a function that returns any two numbers
 func twoNumbers() (int, int) {
-	value1 := rand.Intn(100)
-	value2 := rand.Intn(100)
-	return value1, value2
+	return 2, 2
 }
 
 //* Add three numbers together using any combination of the existing functions.
@@ -48,8 +46,6 @@ func twoNumbers() (int, int) {
 func main() {
 	greet("Lohit")
 	echo("echo")
-	fmt.Println(add(1, 2, 3))
-	fmt.Println(oneNumber())
-	fmt.Println(twoNumbers())
-	fmt.Println(add(oneNumber(), oneNumber(), oneNumber()))
+	a, b := twoNumbers()
+	fmt.Println(add(oneNumber(), a, b))
 }
